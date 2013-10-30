@@ -315,3 +315,9 @@ h3 a:visited {
 .pagination li.active a:visited {
     text-decoration : none;
 }
+
+.disqus {
+    background-color : #58a;
+    padding : 8px;
+    border : 1px solid black;
+}
