@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{{page.title}}</title>
+    <meta name="author" content="{{ data.author.name }}">
+    {{# stylesheets.load }}
+      style.css
+      google_prettify/sons-of-obsidian.css
+    {{/ stylesheets.load }}
+    <!-- this should be urls.production_url, but it doesn't work -->
+    <link href="http://blog.tozt.net{{urls.base_path}}rss.xml" title="{{page.title}}" type="application/rss+xml" rel="alternate"></link>
+</head>
+<body>
+<div class="header">
+    <div>
+    <div class="name"><h1><a href="/{{urls.base_url}}">{{data.title}}</a></h1></div>
+    <img src="http://www.gravatar.com/avatar/dd9aceaf17982bc33972b3bb8701cd19.jpg" alt="gravatar" class="gravatar" />
+    </div>
+    <div class="clear"></div>
+</div>
+<div class="nav">
+<ul>
+    {{# data.navigation?to__root }}
+        {{> pages_list }}
+    {{/ data.navigation?to__root }}
+    <li><a href="/{{urls.base_url}}rss.xml"><img src="{{urls.media}}/rss.png" alt="RSS" /></a></li>
+</ul>
+</div>
+<div class="main_content">
+    {{{ content }}}
+</div>
+<div class="footer">
+    Powered by <a href="http://ruhoh.com/">Ruhoh</a>
+</div>
+
+{{{ widgets.google_prettify }}}
+
+</body>
+</html>

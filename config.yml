@@ -1,0 +1,38 @@
+---
+RuhohSpec: "2.1"
+production_url: "http://blog.tozt.net/"
+base_path: "/"
+
+tozt :
+  use: "theme"
+
+_root:
+  rss:
+    enable: false
+  paginator:
+    enable: false
+
+posts:
+  sort: ["date", "desc"]
+  permalink: "/:year/:month/:day/:title"
+  rss:
+    enable: true
+    limit: 20
+    url: "/"
+  paginator:
+    url: "/index/"
+    per_page: 10
+    root_page: '/'
+
+asset_pipeline:
+  enable: false
+
+widgets:
+  comments:
+    use: disqus
+    enable: true
+    short_name: tozt
+
+  google_prettify:
+    use: local
+    linenums: true

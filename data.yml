@@ -1,0 +1,11 @@
+title : blog.tozt.net
+author :
+  name : Jesse Luehrs
+  email : doy@tozt.net
+  github : doy
+  twitter : doyster
+
+navigation :
+  - archive
+  - tags
+  - about

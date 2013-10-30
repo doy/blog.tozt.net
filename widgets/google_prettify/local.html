@@ -1,0 +1,11 @@
+---
+linenums : true
+---
+<script src="{{urls.base_url}}/assets/widgets/syntax/javascripts/prettify.js"></script>
+<script>
+  var pres = document.getElementsByTagName("pre");
+  for (var i=0; i < pres.length; ++i) {
+    pres[i].className = "prettyprint {{# this_config.linenums }}linenums{{/this_config.linenums}}";
+  }
+  prettyPrint();
+</script>
