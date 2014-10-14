@@ -149,10 +149,12 @@ this code, follow these steps:
   data file (which will be included in the output)
 * Run `wla-6502 -o test.s` to generate an object file called `test.o`
 * Create a file named `linkfile` which is used by the linker, with the contents
+
 ```
 [objects]
 test.o
 ```
+
 * Run `wlalink linkfile test.rom` to create the actual ROM
 
 This ROM is not yet in the format required to be run by most NES emulators. To
