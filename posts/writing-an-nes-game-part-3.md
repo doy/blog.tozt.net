@@ -90,6 +90,6 @@ but that does require more CPU cycles, especially if not all of the buttons
 are important.
 
 In the spirit of continuing with real working code,
-[here]({{urls.media}}/input.nes) is a sample program which changes the
+[here]({{urls.media}}/input.s) is a sample program which changes the
 background color every time you press A, rather than every second like last
 time. Tomorrow, we'll work on drawing sprites!
