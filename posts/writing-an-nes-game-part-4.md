@@ -1,6 +1,6 @@
 ---
 title: writing an nes game, part 4
-date: "2014-10-17 03:30"
+date: "2014-10-19 20:00"
 tags: [hacker school, nes]
 ---
 
